@@ -1,0 +1,19 @@
+----====Jesse's Precompiled Compilers!====----
+
+Here are a few precompiled versions of gcc (currently, version 8.2.0) for a few different targets (MIPS, AVR [OUSB], ARM (Cortex, A??) etc).
+These are currently compiled without a C Standard Library (libc, newlib), meaning you'll have no standard headers or functions, like <stdio.h>, memcpy etc.
+Attempting to do so will result in a compilation error.
+
+The list of them can be found here: https://drive.google.com/drive/u/1/folders/1zT9VmxeC5MVvM8Ung9crnA7TKqEupUz9
+
+If you want a version of gcc WITH a standard library (your choice of GNU libc or Newlib), send me an email at:
+jesse.buhagiar@student.rmit.edu.au
+
+To Extract, perform the following actions:
+1. Download the compiler for the target you are interested in.
+2. Extract using the following command: tar -xzvf . (where '.' means the current directory)
+3. Add the compiler to your path (for you Linux nerds, that is export PATH=$PATH:COMPILER_PATH/bin [COMPILER_PATH is where you extracted it])
+4. Begin programming!
+
+GDB is also included, with the simulator ENABLED. However, I recommend using QEMU to run your code.
+You should be able to attach a GDB session to your actual hardware, IF you own it. I'm assuming most people reading this probably own an OUSB board.
